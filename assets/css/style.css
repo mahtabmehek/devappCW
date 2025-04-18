@@ -1,0 +1,427 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f7f9fc;
+    color: #2d5b2f;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2d5b2f;
+    color: white;
+    padding: 6rem 1rem;
+    text-align: center;
+    background-image: url('../images/banner-main.jpg');
+    background-size: auto;
+    background-position: center -100%;
+}
+
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+p {
+    display: block;
+    color: #d1d5db;
+    margin: 0.5rem 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #2d5b2f;
+}
+
+
+nav {
+    background-color: #f0d047;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+nav a{
+    color: #22201f;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+
+.title-box{
+    max-width: 800px;
+    
+    background: #bd4735;
+    background-color: #bd4735; /* Match the background color of the current box */
+    color: white; /* Match the text color */
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 10px; /* Adjust for smoother edges. Higher value = more rounded */
+    /* Add any other styling you want (e.g., font-family, text-align) */
+    font-family: sans-serif; /* Example font */
+    text-align: center; /* Example text alignment */
+    width: 400px; /* Adjust width to your desired size */
+    margin: 20px auto; /* Center the box horizontally and add some vertical margin */
+}
+
+form input, form select, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #bd4735;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #2563eb;
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+}
+
+footer {
+    position: fixed;
+    text-align: center;
+    padding: 0.5rem 0rem;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e7d060;
+    color: #22201f;
+    font-size: 0.9rem;
+    margin-top: 3rem;
+}
+footer p{
+    display: block;
+    color: #000000;
+    margin: 0.5rem 0;
+}
+
+.login-box {
+    max-width: 400px;
+    margin: 2rem auto;
+    background: #63acba;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.login-form label {
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.login-form input {
+    width: 100%;
+    margin-bottom: 1.25rem;
+    padding: 0.75rem 0rem;
+    font-size: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    transition: border-color 0.2s;
+}
+
+.login-form input:focus {
+    border-color: #63acba;
+    outline: none;
+}
+
+.login-form button {
+    width: 100%;
+    background-color: #f0d148;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #2563eb;
+}
+
+.login-links-split {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.login-links-split a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.login-links-split a:hover {
+    text-decoration: underline;
+}
+
+
+.flex-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.panel {
+    flex: 1;
+    min-width: 280px;
+    background: #63acba;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    margin-bottom: 5rem;
+}
+
+.left, .right {
+    flex: 1;
+    min-width: 400px;
+    
+}
+
+
+
+.session-form input {
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    
+}
+
+.session-form button {
+    background: #3b82f6;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.session-form button:hover {
+    background: #2563eb;
+}
+
+.session-list {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically in a column */
+    width: 300px; /* Set a fixed width for each session block */
+    margin-bottom: 15px; /* Add some space between the session blocks */
+}
+
+.session-list li {
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid #eee;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #f0d047; /* Choose your button background color */
+    color: #000000; /* Choose your button text color */
+    text-decoration: none; /* Remove underline from the link */
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Add rounded corners if desired */
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+    font-size: 16px; /* Adjust font size */
+    list-style-type: none;
+}
+
+.session-card {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    row-gap:4.5rem;
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+    justify-content: center;
+    align-items: start;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 👈 ensures spacing if content is short */
+    background-color: #bd4735;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+    height: 100%;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    color: #111827;
+}
+
+.card p {
+    margin-bottom: 1rem;
+    color: #fefffe;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block; /* Allows setting width and padding */
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #f0d148; /* Choose your button background color */
+    color: #000000; /* Choose your button text color */
+    text-decoration: none; /* Remove underline from the link */
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Add rounded corners if desired */
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+    font-size: 16px; /* Adjust font size */
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2563eb;
+}
+
+
+/* review */
+.review-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.review-panel {
+    flex: 1;
+    min-width: 300px;
+    max-height: 600px;
+    overflow-y: auto;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.review-panel h3 {
+    margin-bottom: 1rem;
+    color: #111827;
+}
+
+.session-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.review-overlay {
+    background: #eef2ff;
+    padding: 0.75rem;
+    border-radius: 8px;
+    margin-top: 0.75rem;
+    font-size: 0.95rem;
+    color: #374151;
+}
+
+.review-actions {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+
+.review-actions a {
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+.review-actions a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* session */
+.delete-button {
+    background-color: #ef4444; 
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    margin-top: 0.75rem;
+    transition: background-color 0.2s ease;
+}
+
+.delete-button:hover {
+    background-color: #dc2626; 
+}
+
+
